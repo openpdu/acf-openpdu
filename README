@@ -1,0 +1,19 @@
+ACF interface for the OpenPDU project.
+
+Connect the wires, and install this package.
+Then go to https://[YOUR_IP], enter user/pass so you can login to ACF.
+Under "OpenPDU" you can control your outlets.
+
+DONE:
+ * Basic Outlet Status (almost everything hardcoded :( )
+ * Power control (ON/OFF) for each socket
+ * All the sockets are powered ON on boot
+ * ACF package
+
+TODO:
+ * configuration file
+ * editing socket parameters
+ * everything else (there's a long list)
+
+BUGS:
+ * At the moment, the "Edit" button doesn't work

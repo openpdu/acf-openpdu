@@ -1,0 +1,21 @@
+#!/bin/sh
+
+OUT1=1
+OUT2=2
+OUT3=3
+OUT4=7
+OUT5=8
+OUT6=9
+OUT7=11
+OUT8=12
+
+for n in $(seq 1 8) ; do
+	eval "echo \$OUT$n > /sys/class/gpio/export"
+	eval "echo out > /sys/class/gpio/gpio\$OUT$n/direction"
+
+	# 0=on 1=off :)
+	VAL=0
+
+	eval "echo $VAL > /sys/class/gpio/gpio\$OUT$n/value"
+	sleep 0.2
+done

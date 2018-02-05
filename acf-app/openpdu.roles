@@ -1,0 +1,4 @@
+USER=openpdu:status
+EDITOR=openpdu:status
+EXPERT=openpdu:status
+ADMIN=openpdu:status,openpdu:edit,openpdu:power,openpdu:poweron,openpdu:poweroff
