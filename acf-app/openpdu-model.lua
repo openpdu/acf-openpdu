@@ -32,7 +32,7 @@ mymodule.updatestatus = function()
 		elseif (tonumber(v) == 1) then
 			s = "Off"
 		else
-			s = "unknown (" .. v .. ")"
+			s = "unknown (" .. tostring(v) .. ")"
 		end
 		config[i].status = s
 	end
