@@ -12,12 +12,14 @@ makedepends=""
 install="acf-openpdu.post-install"
 subpackages=""
 source=""
+options="!check"
+
+build() { 
+  : 
+} 
 
 package() {
 	mkdir -p "$pkgdir"
-}
-
-package() {
 #	make DESTDIR=$pkgdir install || return 1
 	install -Dm644 etc/openpdu/openpdu.conf "$pkgdir"/etc/openpdu/openpdu.conf
 	install -Dm755 etc/local.d/openpdu.start "$pkgdir"/etc/local.d/openpdu.start
