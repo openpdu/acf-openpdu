@@ -7,23 +7,20 @@ pkgdesc="ACF interface for the OpenPDU project"
 url="https://github.com/openpdu/acf-openpdu"
 arch="noarch"
 license="GPL2"
-depends="acf-core"
+depends="acf-core, openpdu"
 makedepends=""
 install="acf-openpdu.post-install"
 subpackages=""
 source=""
 options="!check"
 
-build() { 
-  : 
-} 
+build() {
+  :
+}
 
 package() {
 	mkdir -p "$pkgdir"
 #	make DESTDIR=$pkgdir install || return 1
-	install -Dm644 etc/openpdu/openpdu.conf "$pkgdir"/etc/openpdu/openpdu.conf
-	install -Dm755 etc/local.d/openpdu.start "$pkgdir"/etc/local.d/openpdu.start
-
 	install -Dm644 acf-app/openpdu.menu "$pkgdir"/usr/share/acf/app/openpdu/openpdu.menu
 	install -Dm644 acf-app/openpdu.roles "$pkgdir"/usr/share/acf/app/openpdu/openpdu.roles
 	install -Dm644 acf-app/openpdu-controller.lua "$pkgdir"/usr/share/acf/app/openpdu/openpdu-controller.lua
