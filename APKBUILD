@@ -1,8 +1,8 @@
 # Contributor: Paolo Asperti <paolo@asperti.com>
 # Maintainer: Paolo Asperti <paolo@asperti.com>
 pkgname=acf-openpdu
-pkgver=0.1
-pkgrel=2
+pkgver=0.2
+pkgrel=1
 pkgdesc="ACF interface for the OpenPDU project"
 url="https://github.com/openpdu/acf-openpdu"
 arch="noarch"

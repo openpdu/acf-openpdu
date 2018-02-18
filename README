@@ -7,11 +7,11 @@ Under "OpenPDU" you can control your outlets.
 DONE:
  * Basic Outlet Status (almost everything hardcoded :( )
  * Power control (ON/OFF) for each socket
- * All the sockets are powered ON on boot
+ * All the outlets are powered ON on boot
  * ACF package
+ * configuration file
 
 TODO:
- * configuration file
  * editing socket parameters
  * everything else (there's a long list)
 
