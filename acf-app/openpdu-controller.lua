@@ -16,4 +16,8 @@ mymodule.poweroff = function(self)
 	return self.handle_form(self, self.model.get_setpower, self.model.setpoweroff, self.clientdata, "commitpower", "Action result")
 end
 
+function mymodule.expert(self)
+	return self.handle_form(self, self.model.get_filedetails, self.model.update_filedetails, self.clientdata, "Save", "Edit Config File", "Configuration Set")
+end
+
 return mymodule

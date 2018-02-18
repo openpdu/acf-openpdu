@@ -9,10 +9,10 @@ DONE:
  * Power control (ON/OFF) for each socket
  * All the outlets are powered ON on boot
  * ACF package
- * configuration file
+ * configuration file editing
 
 TODO:
- * editing socket parameters
+ * editing outlet parameters
  * everything else (there's a long list)
 
 BUGS:

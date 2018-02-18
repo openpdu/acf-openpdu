@@ -5,6 +5,7 @@ fs = require("acf.fs")
 json = require('cjson')
 modelfunctions = require("modelfunctions")
 
+local configfile = "/etc/openpdu/openpdu.conf"
 local s = modelfunctions.run_executable({"/usr/bin/openpdu", "outlets", "-j"})
 local o = json.decode(s)
 local outlets = {}
@@ -44,6 +45,14 @@ end
 mymodule.setpoweroff = function(self, r)
   mymodule.setpower(r.value.outlet.value, 0, r)
 	return r
+end
+
+function mymodule.get_filedetails()
+	return modelfunctions.getfiledetails(configfile)
+end
+
+function mymodule.update_filedetails(self, filedetails)
+	return modelfunctions.setfiledetails(self, filedetails, {configfile})
 end
 
 return mymodule

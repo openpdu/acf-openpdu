@@ -1,4 +1,4 @@
 USER=openpdu:status
 EDITOR=openpdu:status
-EXPERT=openpdu:status
-ADMIN=openpdu:status,openpdu:edit,openpdu:power,openpdu:poweron,openpdu:poweroff
+EXPERT=openpdu:status,openpdu:expert
+ADMIN=openpdu:status,openpdu:edit,openpdu:expert,openpdu:power,openpdu:poweron,openpdu:poweroff
